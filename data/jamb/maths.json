@@ -1,0 +1,439 @@
+[
+  {
+    "question": "If log10 2 = 0.3010, evaluate log10 80.",
+    "options": ["1.9030", "1.6020", "2.2040", "0.9030"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: 2x² - 5x - 3 = 0",
+    "options": ["3 or -1/2", "-3 or 1/2", "5 or -2", "-5 or 2"],
+    "answer": 0
+  },
+  {
+    "question": "If sinθ = 5/13, find cosθ (θ acute).",
+    "options": ["12/13", "5/12", "13/12", "8/13"],
+    "answer": 0
+  },
+  {
+    "question": "Differentiate y = 3x³ - 4x² + 6x.",
+    "options": ["9x² - 8x + 6", "9x² - 4x + 6", "3x² - 8x + 6", "9x² - 8x"],
+    "answer": 0
+  },
+  {
+    "question": "Evaluate ∫ 4x dx.",
+    "options": ["2x² + C", "4x² + C", "x² + C", "4x + C"],
+    "answer": 0
+  },
+  {
+    "question": "Find the 10th term of AP: 2, 5, 8,...",
+    "options": ["29", "30", "28", "32"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: 3^(x) = 27",
+    "options": ["3", "2", "4", "1"],
+    "answer": 0
+  },
+  {
+    "question": "If A = {1,2,3,4} and B = {3,4,5}, find A ∩ B",
+    "options": ["{3,4}", "{1,2}", "{5}", "{1,5}"],
+    "answer": 0
+  },
+  {
+    "question": "Probability of getting a head in a fair coin toss?",
+    "options": ["1/2", "1/3", "1/4", "2/3"],
+    "answer": 0
+  },
+  {
+    "question": "Find area of circle radius 7cm (π=22/7).",
+    "options": ["154cm²", "49cm²", "308cm²", "44cm²"],
+    "answer": 0
+  },
+  
+  {
+    "question": "Solve simultaneous equations: x + y = 7, x - y = 3",
+    "options": ["x=5,y=2", "x=2,y=5", "x=4,y=3", "x=3,y=4"],
+    "answer": 0
+  },
+  {
+    "question": "If tanθ = 1, θ equals?",
+    "options": ["45°", "30°", "60°", "90°"],
+    "answer": 0
+  },
+  {
+    "question": "Find gradient of line joining (2,3) and (4,7).",
+    "options": ["2", "3", "4", "1"],
+    "answer": 0
+  },
+  {
+    "question": "Expand (x + 5)(x - 3)",
+    "options": ["x² + 2x -15", "x² -2x -15", "x² +15", "x² -15"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: |x - 2| = 6",
+    "options": ["8 or -4", "6 or -6", "4 or -8", "2 or -6"],
+    "answer": 0
+  },
+  {
+    "question": "Find mean of 3, 5, 7, 9.",
+    "options": ["6", "5", "7", "4"],
+    "answer": 0
+  },
+  {
+    "question": "Find determinant of |1 2; 3 4|.",
+    "options": ["-2", "2", "10", "5"],
+    "answer": 0
+  },
+  {
+    "question": "If x varies directly as y and x=6 when y=3, find x when y=10.",
+    "options": ["20", "18", "15", "30"],
+    "answer": 0
+  },
+  {
+    "question": "Find LCM of 15 and 20.",
+    "options": ["60", "30", "45", "120"],
+    "answer": 0
+  },
+  {
+    "question": "Convert 0.25 to percentage.",
+    "options": ["25%", "2.5%", "0.25%", "250%"],
+    "answer": 0
+  },
+  
+  {
+    "question": "Solve: 5x - 3 = 2x + 9",
+    "options": ["4", "3", "5", "6"],
+    "answer": 0
+  },
+  {
+    "question": "Find median of 2,4,6,8,10.",
+    "options": ["6", "5", "8", "4"],
+    "answer": 0
+  },
+  {
+    "question": "If sin²θ + cos²θ equals?",
+    "options": ["1", "0", "2", "-1"],
+    "answer": 0
+  },
+  {
+    "question": "Find circumference of circle r=7 (π=22/7).",
+    "options": ["44cm", "22cm", "154cm", "88cm"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: x² = 81",
+    "options": ["9 or -9", "9", "-9", "18"],
+    "answer": 0
+  },
+  {
+    "question": "Find next term: 2, 6, 18, 54,...",
+    "options": ["162", "108", "72", "216"],
+    "answer": 0
+  },
+  {
+    "question": "If P=5000, R=10%, T=2 years, find simple interest.",
+    "options": ["1000", "500", "1500", "2000"],
+    "answer": 0
+  },
+  {
+    "question": "Find square root of 225.",
+    "options": ["15", "25", "20", "30"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: 2x + 3y = 12 when x=3",
+    "options": ["2", "3", "1", "4"],
+    "answer": 0
+  },
+  {
+    "question": "If a:b = 3:5 and b=20, find a.",
+    "options": ["12", "15", "10", "18"],
+    "answer": 0
+  },
+  
+  {
+    "question": "Differentiate y = x² + 4x",
+    "options": ["2x + 4", "x + 4", "2x", "x² + 4"],
+    "answer": 0
+  },
+  {
+    "question": "Find area of triangle base 12cm height 10cm.",
+    "options": ["60cm²", "120cm²", "22cm²", "30cm²"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: 4x - 7 = 9",
+    "options": ["4", "3", "5", "6"],
+    "answer": 0
+  },
+  {
+    "question": "If cos60° = 1/2, find sin60°.",
+    "options": ["√3/2", "1/2", "1", "√2/2"],
+    "answer": 0
+  },
+  {
+    "question": "Find range of 4,8,12,6.",
+    "options": ["8", "12", "6", "4"],
+    "answer": 0
+  },
+  
+  {
+    "question": "Find sum of first 10 natural numbers.",
+    "options": ["55", "50", "45", "60"],
+    "answer": 0
+  },
+  {
+    "question": "Solve: 7x = 35",
+    "options": ["5", "7", "6", "4"],
+    "answer": 0
+  },
+  {
+    "question": "Find area of rectangle 9 by 6.",
+    "options": ["54", "45", "60", "48"],
+    "answer": 0
+  },
+  {
+    "question": "Probability of getting 6 in fair die.",
+    "options": ["1/6", "1/3", "1/2", "1/4"],
+    "answer": 0
+  },
+  {
+    "question": "If 4 men can do a job in 8 days, how long will 8 men take?",
+    "options": ["4 days", "8 days", "2 days", "6 days"],
+    "answer": 0
+  }
+,
+{
+"question":"If x² - 4x + 4 = 0, find x.",
+"options":["2","-2","4","1"],
+"answer":0
+},
+{
+"question":"Solve: 2^(x) = 8",
+"options":["3","2","4","1"],
+"answer":0
+},
+{
+"question":"Find the sum of first 15 terms of AP: 2,4,6,...",
+"options":["240","225","210","255"],
+"answer":0
+},
+{
+"question":"Find the mode of 1,2,2,3,4,2,5.",
+"options":["2","3","1","5"],
+"answer":0
+},
+{
+"question":"If cosθ = 12/13, find sinθ.",
+"options":["5/13","12/5","13/5","1/13"],
+"answer":0
+},
+{
+"question":"Solve: 6x - 5 = 13",
+"options":["3","2","4","5"],
+"answer":0
+},
+{
+"question":"Find area of parallelogram base 10cm height 7cm.",
+"options":["70cm²","35cm²","17cm²","140cm²"],
+"answer":0
+},
+{
+"question":"Evaluate 5! (factorial).",
+"options":["120","60","24","720"],
+"answer":0
+},
+{
+"question":"If y = 2x², find dy/dx.",
+"options":["4x","2x","x²","4"],
+"answer":0
+},
+{
+"question":"Solve: x/5 = 9",
+"options":["45","5","14","40"],
+"answer":0
+},
+
+{
+"question":"Find the mean of 10, 20, 30.",
+"options":["20","25","15","30"],
+"answer":0
+},
+{
+"question":"If sin30° = 1/2, find cos30°.",
+"options":["√3/2","1/2","1","√2/2"],
+"answer":0
+},
+{
+"question":"Find determinant of |3 2; 1 4|.",
+"options":["10","5","12","8"],
+"answer":0
+},
+{
+"question":"Solve: 3x² = 27",
+"options":["3 or -3","9 or -9","6 or -6","1 or -1"],
+"answer":0
+},
+{
+"question":"Find LCM of 8 and 12.",
+"options":["24","48","12","96"],
+"answer":0
+},
+
+{
+"question":"If simple interest on ₦4000 at 5% for 3 years?",
+"options":["600","500","700","800"],
+"answer":0
+},
+{
+"question":"Solve simultaneous equations: 2x + y = 5, x - y = 1",
+"options":["x=2,y=1","x=1,y=2","x=3,y=1","x=1,y=3"],
+"answer":0
+},
+{
+"question":"Find the next term: 3,6,12,24,...",
+"options":["48","36","60","72"],
+"answer":0
+},
+{
+"question":"If tan45° equals?",
+"options":["1","0","√3","1/2"],
+"answer":0
+},
+{
+"question":"Find area of sector angle 90°, radius 7cm (π=22/7).",
+"options":["38.5cm²","77cm²","154cm²","22cm²"],
+"answer":0
+},
+
+{
+"question":"Differentiate y = 5x³.",
+"options":["15x²","5x²","10x²","15x"],
+"answer":0
+},
+{
+"question":"Solve: 7x + 3 = 24",
+"options":["3","4","2","5"],
+"answer":0
+},
+{
+"question":"Find probability of getting even number on die.",
+"options":["1/2","1/3","1/6","2/3"],
+"answer":0
+},
+{
+"question":"Find median of 5,7,9.",
+"options":["7","6","8","9"],
+"answer":0
+},
+{
+"question":"If r=14cm, find area of circle (π=22/7).",
+"options":["616cm²","308cm²","154cm²","440cm²"],
+"answer":0
+},
+
+{
+"question":"Solve: x² - 9 = 0",
+"options":["3 or -3","9 or -9","6 or -6","1 or -1"],
+"answer":0
+},
+{
+"question":"If 5 workers finish work in 10 days, 10 workers will take?",
+"options":["5 days","10 days","2 days","4 days"],
+"answer":0
+},
+{
+"question":"Find gradient of line through (1,1) and (2,4).",
+"options":["3","2","1","4"],
+"answer":0
+},
+{
+"question":"Convert 3/4 to percentage.",
+"options":["75%","25%","0.75%","7.5%"],
+"answer":0
+},
+{
+"question":"Evaluate 2³ × 2².",
+"options":["32","16","8","64"],
+"answer":0
+},
+
+{
+"question":"Find range of 2,8,5,10.",
+"options":["8","10","5","3"],
+"answer":0
+},
+{
+"question":"Solve: 9x = 81",
+"options":["9","8","7","6"],
+"answer":0
+},
+{
+"question":"Find the 8th term of AP: 1,4,7,...",
+"options":["22","21","20","23"],
+"answer":0
+},
+{
+"question":"If cos0° equals?",
+"options":["1","0","1/2","-1"],
+"answer":0
+},
+{
+"question":"Find simple interest on ₦2000 at 10% for 1 year.",
+"options":["200","100","300","400"],
+"answer":0
+},
+
+{
+"question":"Solve: 4x² = 100",
+"options":["5 or -5","10 or -10","25 or -25","2 or -2"],
+"answer":0
+},
+{
+"question":"Find mean of 2,4,6,8.",
+"options":["5","4","6","7"],
+"answer":0
+},
+{
+"question":"Find perimeter of square side 9cm.",
+"options":["36cm","18cm","81cm","27cm"],
+"answer":0
+},
+{
+"question":"Evaluate √196.",
+"options":["14","16","12","18"],
+"answer":0
+},
+{
+"question":"Solve: 8x - 4 = 28",
+"options":["4","3","5","6"],
+"answer":0
+},
+
+{
+"question":"Find sum of first 12 natural numbers.",
+"options":["78","72","66","84"],
+"answer":0
+},
+{
+"question":"If sin90° equals?",
+"options":["1","0","1/2","-1"],
+"answer":0
+},
+{
+"question":"Find probability of tail in fair coin.",
+"options":["1/2","1/3","1/4","2/3"],
+"answer":0
+},
+{
+"question":"Solve: x - 7 = 5",
+"options":["12","5","2","10"],
+"answer":0
+},
+{
+"question":"Find area of triangle base 14 height 5.",
+"options":["35","70","19","40"],
+"answer":0
+}
+]

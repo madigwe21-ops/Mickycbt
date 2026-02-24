@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAMB CBT System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="home" class="section">
+  <h1>JAMB CBT Practice</h1>
+
+  <div class="grid">
+
+    <div class="card" onclick="startSubject('maths')">
+      <img src="images/maths.png">
+      <h3>Mathematics</h3>
+    </div>
+
+    <div class="card" onclick="startSubject('physics')">
+      <img src="images/physics.png">
+      <h3>Physics</h3>
+    </div>
+
+    <div class="card" onclick="startSubject('chemistry')">
+      <img src="images/chemistry.png">
+      <h3>Chemistry</h3>
+    </div>
+
+    <div class="card" onclick="startSubject('biology')">
+      <img src="images/biology.png">
+      <h3>Biology</h3>
+    </div>
+
+    <div class="card" onclick="startCBT()">
+      <img src="images/cbt.png">
+      <h3>CBT Mode</h3>
+    </div>
+
+    <div class="card" onclick="showAbout()">
+      <img src="images/about.png">
+      <h3>About App</h3>
+    </div>
+
+  </div>
+</div>
+
+<div id="exam" class="section hidden">
+  <div class="top-bar">
+    <h2 id="subjectTitle"></h2>
+    <div id="timer">00:00:00</div>
+  </div>
+  <div id="questionBox"></div>
+</div>
+
+<div id="result" class="section hidden"></div>
+
+<div id="about" class="section hidden">
+  <h2>About This CBT System</h2>
+  <p>
+    This application simulates the real JAMB CBT experience.
+  </p>
+  <ul>
+    <li>✔ 40 Questions per Subject</li>
+    <li>✔ Full 160 Questions CBT Mode</li>
+    <li>✔ Mathematics First Flow</li>
+    <li>✔ Randomized Questions & Options</li>
+    <li>✔ Image-based Questions</li>
+    <li>✔ Percentage & Grade</li>
+    <li>own by Micky fundz</li>
+    <p>Micky fundz </p>
+  </ul>
+  <button onclick="goHome()">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

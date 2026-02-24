@@ -1,0 +1,156 @@
+[
+{
+  "question": "The basic unit of life is?",
+  "options": ["Tissue", "Organ", "Cell", "Organ system"],
+  "answer": "Cell",
+  "explanation": "The cell is the structural and functional unit of life."
+},
+{
+  "question": "Photosynthesis occurs in which organelle?",
+  "options": ["Mitochondria", "Chloroplast", "Nucleus", "Ribosome"],
+  "answer": "Chloroplast",
+  "explanation": "Chloroplast contains chlorophyll for photosynthesis."
+},
+{
+  "question": "The movement of water across a semi-permeable membrane is called?",
+  "options": ["Diffusion", "Osmosis", "Active transport", "Transpiration"],
+  "answer": "Osmosis",
+  "explanation": "Osmosis is the movement of water from high to low concentration."
+},
+{
+  "question": "Which blood cells fight infection?",
+  "options": ["Red blood cells", "Platelets", "White blood cells", "Plasma"],
+  "answer": "White blood cells",
+  "explanation": "White blood cells defend the body."
+},
+{
+  "question": "The powerhouse of the cell is?",
+  "options": ["Ribosome", "Nucleus", "Mitochondria", "Golgi body"],
+  "answer": "Mitochondria",
+  "explanation": "Mitochondria produce ATP."
+},
+
+{
+  "question": "The functional unit of the kidney is?",
+  "options": ["Neuron", "Nephron", "Alveolus", "Glomerulus"],
+  "answer": "Nephron",
+  "explanation": "Nephron performs filtration in kidney."
+},
+{
+  "question": "Which vitamin is formed in sunlight?",
+  "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+  "answer": "Vitamin D",
+  "explanation": "Sunlight helps produce Vitamin D."
+},
+{
+  "question": "Respiration occurs in?",
+  "options": ["Chloroplast", "Mitochondria", "Ribosome", "Vacuole"],
+  "answer": "Mitochondria",
+  "explanation": "Respiration releases energy in mitochondria."
+},
+{
+  "question": "The male gamete is?",
+  "options": ["Ovum", "Embryo", "Sperm", "Zygote"],
+  "answer": "Sperm",
+  "explanation": "Sperm fertilizes ovum."
+},
+{
+  "question": "The female reproductive part of flower is?",
+  "options": ["Stamen", "Carpel", "Anther", "Filament"],
+  "answer": "Carpel",
+  "explanation": "Carpel contains ovary."
+},
+
+{
+  "question": "Which organ pumps blood?",
+  "options": ["Liver", "Heart", "Kidney", "Lungs"],
+  "answer": "Heart",
+  "explanation": "Heart pumps blood."
+},
+{
+  "question": "Which gas is released during photosynthesis?",
+  "options": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+  "answer": "Oxygen",
+  "explanation": "Oxygen is by-product of photosynthesis."
+},
+{
+  "question": "DNA stands for?",
+  "options": ["Deoxyribonucleic Acid", "Ribonucleic Acid", "Double Nitric Acid", "Dynamic Nucleic Acid"],
+  "answer": "Deoxyribonucleic Acid",
+  "explanation": "DNA carries genetic information."
+},
+{
+  "question": "Which kingdom does mushroom belong to?",
+  "options": ["Animalia", "Plantae", "Fungi", "Protista"],
+  "answer": "Fungi",
+  "explanation": "Mushroom is fungi."
+},
+{
+  "question": "Which part controls balance?",
+  "options": ["Cerebrum", "Medulla", "Cerebellum", "Spinal cord"],
+  "answer": "Cerebellum",
+  "explanation": "Cerebellum controls balance."
+},
+
+{
+  "question": "Malaria is caused by?",
+  "options": ["Virus", "Bacteria", "Plasmodium", "Fungus"],
+  "answer": "Plasmodium",
+  "explanation": "Plasmodium parasite causes malaria."
+},
+{
+  "question": "The largest organ in the body is?",
+  "options": ["Liver", "Brain", "Skin", "Heart"],
+  "answer": "Skin",
+  "explanation": "Skin is the largest organ."
+},
+{
+  "question": "Blood group universal donor is?",
+  "options": ["A", "B", "AB", "O"],
+  "answer": "O",
+  "explanation": "Blood group O donates to all."
+},
+{
+  "question": "Which structure makes protein?",
+  "options": ["Nucleus", "Ribosome", "Vacuole", "Chloroplast"],
+  "answer": "Ribosome",
+  "explanation": "Ribosome synthesizes protein."
+},
+{
+  "question": "Evolution theory was proposed by?",
+  "options": ["Mendel", "Darwin", "Lamarck", "Pasteur"],
+  "answer": "Darwin",
+  "explanation": "Darwin proposed natural selection."
+},
+
+{
+  "question": "The basic unit of heredity is?",
+  "options": ["Gene", "Chromosome", "Cell", "Tissue"],
+  "answer": "Gene",
+  "explanation": "Gene controls traits."
+},
+{
+  "question": "Which organ removes urea?",
+  "options": ["Heart", "Kidney", "Lungs", "Brain"],
+  "answer": "Kidney",
+  "explanation": "Kidney filters urea."
+},
+{
+  "question": "Transpiration occurs through?",
+  "options": ["Roots", "Stem", "Stomata", "Flower"],
+  "answer": "Stomata",
+  "explanation": "Stomata allow water loss."
+},
+{
+  "question": "Which is a monocot plant?",
+  "options": ["Maize", "Beans", "Mango", "Orange"],
+  "answer": "Maize",
+  "explanation": "Maize is monocot."
+},
+{
+  "question": "Which is a dicot plant?",
+  "options": ["Maize", "Rice", "Beans", "Grass"],
+  "answer": "Beans",
+  "explanation": "Beans are dicot."
+}
+]
