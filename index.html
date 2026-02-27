@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Micky CBT Platform</title>
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#0f172a">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +21,7 @@
 <div id="homeSection" class="section">
 
   <h1>JAMB CBT Practice</h1>
-  <h2>by Micky fundz</h2>
+  <h2>by Micky Fundz</h2>
 
   <div class="grid">
 
@@ -48,48 +56,31 @@
     </div>
 
   </div>
+
+  <br>
+  <button onclick="installApp()">Install App</button>
+
 </div>
 
 <!-- ================= ABOUT SECTION ================= -->
 
 <div id="aboutSection" class="section hidden">
-
   <div class="top-bar">
     <h2>About Micky CBT Platform</h2>
     <button onclick="goHome()">Back</button>
   </div>
 
   <div id="questionBox">
-
     <p class="question-text">
-      <strong>Micky CBT Platform</strong> is a professional JAMB CBT practice
-      system designed to help students prepare effectively for examinations.
+      Micky CBT Platform is a professional JAMB CBT system
+      built to help students practice effectively.
     </p>
-
-    <p>
-      This platform allows students to:
-    </p>
-
-    <ul>
-      <li>Select preferred subjects</li>
-      <li>Practice timed CBT exams</li>
-      <li>Track performance per subject</li>
-      <li>Review correct and wrong answers</li>
-      <li>Use built-in calculator when needed</li>
-    </ul>
-
-    <p>
-      Built and maintained by <strong>Micky Fundz</strong>.
-    </p>
-
   </div>
-
 </div>
 
 <!-- ================= SUBJECT SELECTION ================= -->
 
 <div id="subjectSelectSection" class="section hidden">
-
   <h2>Select Subjects</h2>
 
   <label><input type="checkbox" id="maths"> Mathematics</label><br>
@@ -99,7 +90,6 @@
 
   <button onclick="startCBT()">Start Exam</button>
   <button onclick="goHome()">Back</button>
-
 </div>
 
 <!-- ================= EXAM SECTION ================= -->
@@ -121,10 +111,8 @@
   </div>
 
   <br>
-
   <button onclick="prevQuestion()">Previous</button>
   <button onclick="nextQuestion()">Next</button>
-
 </div>
 
 <!-- ================= RESULT SECTION ================= -->
@@ -146,29 +134,59 @@
     <button onclick="appendCalc('7')">7</button>
     <button onclick="appendCalc('8')">8</button>
     <button onclick="appendCalc('9')">9</button>
-    <button class="operator" onclick="appendCalc('/')">÷</button>
+    <button onclick="appendCalc('/')">÷</button>
 
     <button onclick="appendCalc('4')">4</button>
     <button onclick="appendCalc('5')">5</button>
     <button onclick="appendCalc('6')">6</button>
-    <button class="operator" onclick="appendCalc('*')">×</button>
+    <button onclick="appendCalc('*')">×</button>
 
     <button onclick="appendCalc('1')">1</button>
     <button onclick="appendCalc('2')">2</button>
     <button onclick="appendCalc('3')">3</button>
-    <button class="operator" onclick="appendCalc('-')">−</button>
+    <button onclick="appendCalc('-')">−</button>
 
-    <button class="zero" onclick="appendCalc('0')">0</button>
+    <button onclick="appendCalc('0')">0</button>
     <button onclick="appendCalc('.')">.</button>
-    <button class="operator" onclick="appendCalc('+')">+</button>
+    <button onclick="appendCalc('+')">+</button>
 
-    <button class="clear" onclick="clearCalc()">C</button>
-    <button class="equal" onclick="calculateResult()">=</button>
+    <button onclick="clearCalc()">C</button>
+    <button onclick="calculateResult()">=</button>
   </div>
 
 </div>
 
 <script src="script.js"></script>
+
+<!-- ================= PWA INSTALL LOGIC ================= -->
+
+<script>
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  console.log("Install ready");
+});
+
+function installApp(){
+  if(deferredPrompt){
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => {
+      deferredPrompt = null;
+    });
+  }
+}
+
+// Register Service Worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("servicework.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch(err => console.log("SW Error:", err));
+  });
+}
+</script>
 
 </body>
 </html>
