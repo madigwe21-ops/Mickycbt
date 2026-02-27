@@ -1,99 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JAMB CBT System</title>
-
+<title>Micky CBT Platform</title>
 <link rel="stylesheet" href="style.css">
-
-<!-- PWA SETTINGS -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#0d6efd">
-<link rel="apple-touch-icon" href="images/icon.png">
 </head>
-
 <body>
 
-<div id="home" class="section">
+<!-- ================= HOME SECTION ================= -->
+
+<div id="homeSection" class="section">
+
   <h1>JAMB CBT Practice</h1>
   <h2>by Micky fundz</h2>
 
   <div class="grid">
 
-    <div class="card" onclick="startSubject('maths')">
+    <div class="card" onclick="openSubject('maths')">
       <img src="images/maths.png">
       <h3>Mathematics</h3>
     </div>
 
-    <div class="card" onclick="startSubject('physics')">
+    <div class="card" onclick="openSubject('physics')">
       <img src="images/physics.png">
       <h3>Physics</h3>
     </div>
 
-    <div class="card" onclick="startSubject('chemistry')">
+    <div class="card" onclick="openSubject('chemistry')">
       <img src="images/chemistry.png">
       <h3>Chemistry</h3>
     </div>
 
-    <div class="card" onclick="startSubject('biology')">
+    <div class="card" onclick="openSubject('biology')">
       <img src="images/biology.png">
       <h3>Biology</h3>
     </div>
 
-    <div class="card" onclick="startCBT()">
+    <div class="card" onclick="openCBTSelection()">
       <img src="images/cbt.png">
       <h3>CBT Mode</h3>
     </div>
 
-    <div class="card" onclick="showAbout()">
+    <div class="card" onclick="openAbout()">
       <img src="images/about.png">
-      <h3>About App</h3>
+      <h3>About</h3>
     </div>
 
   </div>
 </div>
 
-<div id="exam" class="section hidden">
+<!-- ================= ABOUT SECTION ================= -->
+
+<div id="aboutSection" class="section hidden">
+
   <div class="top-bar">
-    <h2 id="subjectTitle"></h2>
-    <div id="timer">00:00:00</div>
+    <h2>About Micky CBT Platform</h2>
+    <button onclick="goHome()">Back</button>
   </div>
-  <div id="questionBox"></div>
+
+  <div id="questionBox">
+
+    <p class="question-text">
+      <strong>Micky CBT Platform</strong> is a professional JAMB CBT practice
+      system designed to help students prepare effectively for examinations.
+    </p>
+
+    <p>
+      This platform allows students to:
+    </p>
+
+    <ul>
+      <li>Select preferred subjects</li>
+      <li>Practice timed CBT exams</li>
+      <li>Track performance per subject</li>
+      <li>Review correct and wrong answers</li>
+      <li>Use built-in calculator when needed</li>
+    </ul>
+
+    <p>
+      Built and maintained by <strong>Micky Fundz</strong>.
+    </p>
+
+  </div>
+
 </div>
 
-<div id="result" class="section hidden"></div>
+<!-- ================= SUBJECT SELECTION ================= -->
 
-<div id="about" class="section hidden">
-  <h2>About This CBT System</h2>
-  <p>
-    This application simulates the real JAMB CBT experience.
-  </p>
+<div id="subjectSelectSection" class="section hidden">
 
-  <ul>
-    <li>✔ 40 Questions per Subject</li>
-    <li>✔ Full 160 Questions CBT Mode</li>
-    <li>✔ Mathematics First Flow</li>
-    <li>✔ Randomized Questions & Options</li>
-    <li>✔ Image-based Questions</li>
-    <li>✔ Percentage & Grade</li>
-    <li>Owned by Micky fundz</li>
-  </ul>
+  <h2>Select Subjects</h2>
 
+  <label><input type="checkbox" id="maths"> Mathematics</label><br>
+  <label><input type="checkbox" id="physics"> Physics</label><br>
+  <label><input type="checkbox" id="chemistry"> Chemistry</label><br>
+  <label><input type="checkbox" id="biology"> Biology</label><br><br>
+
+  <button onclick="startCBT()">Start Exam</button>
   <button onclick="goHome()">Back</button>
+
+</div>
+
+<!-- ================= EXAM SECTION ================= -->
+
+<div id="examSection" class="section hidden">
+
+  <div class="top-bar">
+    <div id="subjectIndicator"></div>
+
+    <div class="exam-controls">
+      <div id="timer"></div>
+      <button class="calc-btn" onclick="toggleCalculator()">Calculator</button>
+    </div>
+  </div>
+
+  <div id="questionBox">
+    <div class="question-text" id="questionText"></div>
+    <div id="optionsContainer"></div>
+  </div>
+
+  <br>
+
+  <button onclick="prevQuestion()">Previous</button>
+  <button onclick="nextQuestion()">Next</button>
+
+</div>
+
+<!-- ================= RESULT SECTION ================= -->
+
+<div id="resultSection" class="section hidden"></div>
+
+<!-- ================= CALCULATOR ================= -->
+
+<div id="calculator" class="calculator hidden">
+
+  <div class="calc-header">
+    Calculator
+    <button class="close-btn" onclick="toggleCalculator()">X</button>
+  </div>
+
+  <div class="calc-screen" id="calcScreen">0</div>
+
+  <div class="calc-grid">
+    <button onclick="appendCalc('7')">7</button>
+    <button onclick="appendCalc('8')">8</button>
+    <button onclick="appendCalc('9')">9</button>
+    <button class="operator" onclick="appendCalc('/')">÷</button>
+
+    <button onclick="appendCalc('4')">4</button>
+    <button onclick="appendCalc('5')">5</button>
+    <button onclick="appendCalc('6')">6</button>
+    <button class="operator" onclick="appendCalc('*')">×</button>
+
+    <button onclick="appendCalc('1')">1</button>
+    <button onclick="appendCalc('2')">2</button>
+    <button onclick="appendCalc('3')">3</button>
+    <button class="operator" onclick="appendCalc('-')">−</button>
+
+    <button class="zero" onclick="appendCalc('0')">0</button>
+    <button onclick="appendCalc('.')">.</button>
+    <button class="operator" onclick="appendCalc('+')">+</button>
+
+    <button class="clear" onclick="clearCalc()">C</button>
+    <button class="equal" onclick="calculateResult()">=</button>
+  </div>
+
 </div>
 
 <script src="script.js"></script>
-
-<!-- SERVICE WORKER REGISTER -->
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js')
-  .then(function() {
-    console.log("Service Worker Registered");
-  });
-}
-</script>
 
 </body>
 </html>

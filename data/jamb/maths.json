@@ -435,5 +435,304 @@
 "question":"Find area of triangle base 14 height 5.",
 "options":["35","70","19","40"],
 "answer":0
+},
+{
+  "question": "If 3^(x+1) = 81, find x.",
+  "options": ["2", "3", "4", "1"],
+  "answer": "2",
+  "explanation": "81 = 3^4, so x+1 = 4, therefore x = 3."
+},
+{
+  "question": "Solve: 2x^2 - 7x + 3 = 0",
+  "options": ["3, 1/2", "3/2, 1", "3, -1/2", "-3, 1/2"],
+  "answer": "3, 1/2",
+  "explanation": "Factor: (2x-1)(x-3)=0, so x=1/2 or x=3."
+},
+{
+  "question": "If sin θ = 5/13, find cos θ.",
+  "options": ["12/13", "5/12", "13/12", "12/5"],
+  "answer": "12/13",
+  "explanation": "Using Pythagoras: opposite=5, hyp=13, adjacent=12."
+},
+{
+  "question": "Evaluate: log10 0.01",
+  "options": ["-2", "2", "-1", "1"],
+  "answer": "-2",
+  "explanation": "0.01 = 10^-2."
+},
+{
+  "question": "Find the 10th term of the sequence 2,5,8,...",
+  "options": ["29", "30", "28", "31"],
+  "answer": "29",
+  "explanation": "Arithmetic sequence: a+ (n-1)d = 2+9×3=29."
+},
+{
+  "question": "Expand (2x - 3)^2",
+  "options": ["4x^2 - 12x + 9", "4x^2 - 6x + 9", "2x^2 - 9", "4x^2 + 12x + 9"],
+  "answer": "4x^2 - 12x + 9",
+  "explanation": "(a-b)^2 = a^2 - 2ab + b^2."
+},
+{
+  "question": "If the mean of 2,4,6,x is 5, find x.",
+  "options": ["8", "10", "6", "12"],
+  "answer": "8",
+  "explanation": "Sum=20 so x=8."
+},
+{
+  "question": "Find determinant of [[2,3],[1,4]]",
+  "options": ["5", "8", "6", "2"],
+  "answer": "5",
+  "explanation": "2×4 - 3×1 = 8-3=5."
+},
+{
+  "question": "Differentiate y = 3x^2 - 4x + 1",
+  "options": ["6x - 4", "3x - 4", "6x + 4", "2x - 4"],
+  "answer": "6x - 4",
+  "explanation": "Derivative of ax^n is nax^(n-1)."
+},
+{
+  "question": "If P(A)=0.4, find P(not A).",
+  "options": ["0.6", "0.4", "0.2", "1.4"],
+  "answer": "0.6",
+  "explanation": "1 - 0.4 = 0.6."
+},{
+  "question": "Solve: 5^(x-1) = 125",
+  "options": ["2", "3", "4", "1"],
+  "answer": "4",
+  "explanation": "125 = 5^3 so x-1 = 3 therefore x = 4."
+},
+{
+  "question": "If tan θ = 3/4, find sec θ.",
+  "options": ["5/4", "4/5", "5/3", "3/5"],
+  "answer": "5/4",
+  "explanation": "Opp=3 Adj=4 Hyp=5 so sec = hyp/adj = 5/4."
+},
+{
+  "question": "Find the sum of first 20 terms of 3,7,11,...",
+  "options": ["820", "800", "760", "840"],
+  "answer": "820",
+  "explanation": "S=n/2[2a+(n-1)d]=20/2[6+76]=10×82=820."
+},
+{
+  "question": "If log2 x = 5, find x.",
+  "options": ["32", "25", "16", "64"],
+  "answer": "32",
+  "explanation": "x = 2^5 = 32."
+},
+{
+  "question": "Find variance of 2,4,6.",
+  "options": ["8/3", "4/3", "2", "3"],
+  "answer": "8/3",
+  "explanation": "Mean=4. Variance=[(4+0+4)/3]=8/3."
+},
+{
+  "question": "Find equation of line with slope 2 passing through (1,3).",
+  "options": ["y=2x+1", "y=2x-1", "y=3x+1", "y=2x+3"],
+  "answer": "y=2x+1",
+  "explanation": "y-3=2(x-1) => y=2x+1."
+},
+{
+  "question": "Solve: x^2 - 9 = 0",
+  "options": ["±3", "3", "-3", "±9"],
+  "answer": "±3",
+  "explanation": "x^2=9 so x=±3."
+},
+{
+  "question": "Find the gradient between (2,5) and (4,9).",
+  "options": ["2", "4", "3", "1"],
+  "answer": "2",
+  "explanation": "(9-5)/(4-2)=4/2=2."
+},
+{
+  "question": "Differentiate y = 5x^3",
+  "options": ["15x^2", "5x^2", "3x^2", "15x"],
+  "answer": "15x^2",
+  "explanation": "d/dx 5x^3 = 15x^2."
+},
+{
+  "question": "Find P(sum=7) when two dice are thrown.",
+  "options": ["1/6", "1/36", "6/36", "5/36"],
+  "answer": "1/6",
+  "explanation": "6 favorable out of 36 => 6/36=1/6."
+},
+{
+  "question": "Solve inequality: 2x - 3 > 5",
+  "options": ["x>4", "x>3", "x<4", "x<3"],
+  "answer": "x>4",
+  "explanation": "2x>8 so x>4."
+},
+{
+  "question": "If cos θ = 1/2, θ is:",
+  "options": ["60°", "30°", "45°", "90°"],
+  "answer": "60°",
+  "explanation": "cos60=1/2."
+},
+{
+  "question": "Find area of circle radius 7.",
+  "options": ["154", "49π", "154π", "308"],
+  "answer": "154",
+  "explanation": "πr^2=22/7×49=154."
+},
+{
+  "question": "Solve simultaneous: x+y=5, x-y=1",
+  "options": ["x=3,y=2", "x=2,y=3", "x=4,y=1", "x=1,y=4"],
+  "answer": "x=3,y=2",
+  "explanation": "Add equations =>2x=6 so x=3."
+},
+{
+  "question": "Find inverse of 4.",
+  "options": ["1/4", "4", "-4", "0.4"],
+  "answer": "1/4",
+  "explanation": "Multiplicative inverse is reciprocal."
+},
+{
+  "question": "Expand (x+2)(x-3)",
+  "options": ["x^2-x-6", "x^2+5x-6", "x^2-x+6", "x^2-5x-6"],
+  "answer": "x^2-x-6",
+  "explanation": "x^2-3x+2x-6."
+},
+{
+  "question": "If A={1,2,3} B={3,4}, find A∩B.",
+  "options": ["{3}", "{1,2}", "{4}", "{}"],
+  "answer": "{3}",
+  "explanation": "Common element is 3."
+},
+{
+  "question": "Convert 45° to radians.",
+  "options": ["π/4", "π/2", "π/6", "π/3"],
+  "answer": "π/4",
+  "explanation": "45×π/180=π/4."
+},
+{
+  "question": "Solve: log x + log 2 = log 8",
+  "options": ["4", "6", "2", "8"],
+  "answer": "4",
+  "explanation": "log2x=log8 so 2x=8 => x=4."
+},
+{
+  "question": "Find median of 2,5,7,9,11",
+  "options": ["7", "5", "9", "6"],
+  "answer": "7",
+  "explanation": "Middle value."
+},
+{
+  "question": "Find mode of 3,4,4,5,6",
+  "options": ["4", "5", "3", "6"],
+  "answer": "4",
+  "explanation": "Most frequent."
+},
+{
+  "question": "Find simple interest on 1000 at 5% for 2 years.",
+  "options": ["100", "200", "50", "150"],
+  "answer": "100",
+  "explanation": "SI=PRT=1000×0.05×2=100."
+},
+{
+  "question": "Solve: √(x+5)=3",
+  "options": ["4", "9", "14", "16"],
+  "answer": "4",
+  "explanation": "Square both sides => x+5=9."
+},
+{
+  "question": "Find LCM of 6 and 8.",
+  "options": ["24", "12", "48", "16"],
+  "answer": "24",
+  "explanation": "LCM=24."
+},
+{
+  "question": "Find HCF of 18 and 24.",
+  "options": ["6", "12", "3", "9"],
+  "answer": "6",
+  "explanation": "Common factor 6."
+},
+{
+  "question": "Evaluate: 2^3 × 2^4",
+  "options": ["128", "64", "32", "16"],
+  "answer": "128",
+  "explanation": "2^(3+4)=2^7=128."
+},
+{
+  "question": "Solve: 4x=16",
+  "options": ["4", "2", "8", "16"],
+  "answer": "4",
+  "explanation": "x=4."
+},
+{
+  "question": "If perimeter of square is 20, find side.",
+  "options": ["5", "4", "10", "20"],
+  "answer": "5",
+  "explanation": "20/4=5."
+},
+{
+  "question": "Find area of triangle base 6 height 8.",
+  "options": ["24", "48", "14", "20"],
+  "answer": "24",
+  "explanation": "1/2×6×8=24."
+},
+{
+  "question": "Evaluate: 9^0",
+  "options": ["1", "0", "9", "Undefined"],
+  "answer": "1",
+  "explanation": "Any number^0=1."
+},
+{
+  "question": "Solve: 3x+2=11",
+  "options": ["3", "2", "4", "5"],
+  "answer": "3",
+  "explanation": "3x=9."
+},
+{
+  "question": "Find probability of head in fair coin.",
+  "options": ["1/2", "1/3", "1/4", "1"],
+  "answer": "1/2",
+  "explanation": "1 favorable out of 2."
+},
+{
+  "question": "Convert 0.25 to fraction.",
+  "options": ["1/4", "1/2", "2/5", "1/5"],
+  "answer": "1/4",
+  "explanation": "0.25=1/4."
+},
+{
+  "question": "Solve: 7x=21",
+  "options": ["3", "2", "7", "4"],
+  "answer": "3",
+  "explanation": "x=3."
+},
+{
+  "question": "Find square root of 144.",
+  "options": ["12", "14", "16", "10"],
+  "answer": "12",
+  "explanation": "12×12=144."
+},
+{
+  "question": "Evaluate: 5!",
+  "options": ["120", "60", "20", "100"],
+  "answer": "120",
+  "explanation": "5×4×3×2×1."
+},
+{
+  "question": "Find slope of horizontal line.",
+  "options": ["0", "1", "Undefined", "-1"],
+  "answer": "0",
+  "explanation": "No change in y."
+},
+{
+  "question": "Solve: |x|=3",
+  "options": ["±3", "3", "-3", "0"],
+  "answer": "±3",
+  "explanation": "Absolute value."
+},
+{
+  "question": "If 2:3 = x:9, find x.",
+  "options": ["6", "3", "9", "12"],
+  "answer": "6",
+  "explanation": "Cross multiply."
+},
+{
+  "question": "Find circumference of circle radius 7.",
+  "options": ["44", "22", "49", "14"],
+  "answer": "44",
+  "explanation": "2πr=2×22/7×7=44."
 }
 ]
