@@ -330,4 +330,55 @@ button:hover{
   grid-template-columns:repeat(2, 1fr);
   gap:20px;
   margin-top:30px;
+}/* =====================================
+   INSTALL TOP BANNER
+===================================== */
+
+.install-banner{
+  position:fixed;
+  top:-100px;
+  left:0;
+  width:100%;
+  background:#0ea5e9;
+  color:white;
+  padding:14px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  transition:top 0.4s ease;
+  z-index:9999;
+  box-shadow:0 8px 20px rgba(0,0,0,0.6);
+}
+
+.install-banner span{
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+.install-banner button{
+  margin-left:10px;
+  padding:6px 14px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+#installBtn{
+  background:white;
+  color:#0ea5e9;
+}
+
+#installBtn:hover{
+  background:#f1f5f9;
+}
+
+#closeInstall{
+  background:transparent;
+  color:white;
+  font-size:18px;
+}
+
+#closeInstall:hover{
+  color:#ef4444;
 }

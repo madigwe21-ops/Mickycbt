@@ -254,4 +254,48 @@ function calculateResult(){
   }catch{
     screen.innerText = "Error";
   }
-}
+}// ================= INSTALL TOP BANNER =================
+
+let deferredPrompt;
+const installBanner = document.getElementById("installBanner");
+const installBtn = document.getElementById("installBtn");
+const closeInstall = document.getElementById("closeInstall");
+
+window.addEventListener("beforeinstallprompt", (e) => {
+
+  e.preventDefault(); // Stop automatic mini-infobar
+  deferredPrompt = e;
+
+  // If user already closed before, don't show again
+  if(localStorage.getItem("hideInstallBanner") === "true"){
+    return;
+  }
+
+  // Show banner after 2 seconds
+  setTimeout(()=>{
+    installBanner.style.top = "0";
+  },2000);
+
+});
+
+installBtn.addEventListener("click", async () => {
+
+  if(!deferredPrompt) return;
+
+  deferredPrompt.prompt();
+
+  const { outcome } = await deferredPrompt.userChoice;
+
+  console.log("Install choice:", outcome);
+
+  deferredPrompt = null;
+  installBanner.style.display = "none";
+
+});
+
+closeInstall.addEventListener("click", () => {
+
+  installBanner.style.display = "none";
+  localStorage.setItem("hideInstallBanner", "true");
+
+});
