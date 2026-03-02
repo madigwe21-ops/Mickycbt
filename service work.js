@@ -1,20 +1,23 @@
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open('mickycbt').then(function(cache) {
-      return cache.addAll([
-        '/',
-        'index.html',
-        'style.css',
-        'script.js'
-      ]);
-    })
+const CACHE_NAME = "cbt-cache-v2";
+
+const FILES_TO_CACHE = [
+  "/",
+  "/index.html",
+  "/questions.js",
+  "/script.js",
+  "/style.css"
+];
+
+self.addEventListener("install", event => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+    .then(cache => cache.addAll(FILES_TO_CACHE))
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request)
+    .then(response => response || fetch(event.request))
   );
 });
