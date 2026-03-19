@@ -6,18 +6,22 @@
 
 <title>Micky CBT Platform</title>
 
-<!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
-
-<!-- Theme Color -->
 <meta name="theme-color" content="#0f172a">
-
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* Simple fix for ad spacing */
+.ad-box{
+  text-align:center;
+  margin:20px 0;
+}
+</style>
+
 </head>
 <body>
 
-<!-- ================= INSTALL TOP BANNER ================= -->
-
+<!-- INSTALL BANNER -->
 <div id="installBanner" class="install-banner">
   <span>Install Micky CBT App for better experience 📲</span>
   <div>
@@ -26,8 +30,7 @@
   </div>
 </div>
 
-<!-- ================= HOME SECTION ================= -->
-
+<!-- HOME -->
 <div id="homeSection" class="section">
 
   <h1>JAMB CBT Practice</h1>
@@ -67,29 +70,50 @@
 
   </div>
 
-  <br>
   <button onclick="installApp()">Install App</button>
+
+  <!-- ✅ AD UNIT (HOME PAGE) -->
+  <div class="ad-box">
+    <script>
+      atOptions = {
+        'key' : 'ae36d7e9a9e25c450bfb682ae307cc68',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/ae36d7e9a9e25c450bfb682ae307cc68/invoke.js"></script>
+  </div>
 
 </div>
 
-<!-- ================= ABOUT SECTION ================= -->
-
+<!-- ABOUT -->
 <div id="aboutSection" class="section hidden">
   <div class="top-bar">
     <h2>About Micky CBT Platform</h2>
     <button onclick="goHome()">Back</button>
   </div>
 
-  <div id="questionBox">
-    <p class="question-text">
-      Micky CBT Platform is a professional JAMB CBT system
-      built to help students practice effectively.
-    </p>
+  <p style="padding:20px;">
+    Micky CBT Platform is a professional JAMB CBT system built to help students practice effectively.
+  </p>
+
+  <!-- ✅ AD UNIT (ABOUT PAGE) -->
+  <div class="ad-box">
+    <script>
+      atOptions = {
+        'key' : 'ae36d7e9a9e25c450bfb682ae307cc68',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/ae36d7e9a9e25c450bfb682ae307cc68/invoke.js"></script>
   </div>
+
 </div>
 
-<!-- ================= SUBJECT SELECTION ================= -->
-
+<!-- SUBJECT SELECT -->
 <div id="subjectSelectSection" class="section hidden">
   <h2>Select Subjects</h2>
 
@@ -102,8 +126,7 @@
   <button onclick="goHome()">Back</button>
 </div>
 
-<!-- ================= EXAM SECTION ================= -->
-
+<!-- EXAM -->
 <div id="examSection" class="section hidden">
 
   <div class="top-bar">
@@ -111,99 +134,60 @@
 
     <div class="exam-controls">
       <div id="timer"></div>
-      <button class="calc-btn" onclick="toggleCalculator()">Calculator</button>
+      <button onclick="toggleCalculator()">Calculator</button>
     </div>
   </div>
 
   <div id="questionBox">
-    <div class="question-text" id="questionText"></div>
+    <div id="questionText"></div>
     <div id="optionsContainer"></div>
   </div>
 
-  <br>
   <button onclick="prevQuestion()">Previous</button>
   <button onclick="nextQuestion()">Next</button>
+
+  <!-- ✅ AD UNIT (EXAM PAGE) -->
+  <div class="ad-box">
+    <script>
+      atOptions = {
+        'key' : 'ae36d7e9a9e25c450bfb682ae307cc68',
+        'format' : 'iframe',
+        'height' : 50,
+        'width' : 320
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/ae36d7e9a9e25c450bfb682ae307cc68/invoke.js"></script>
+  </div>
+
 </div>
 
-<!-- ================= RESULT SECTION ================= -->
-
+<!-- RESULT -->
 <div id="resultSection" class="section hidden"></div>
-
-<!-- ================= CALCULATOR ================= -->
-
-<div id="calculator" class="calculator hidden">
-
-  <div class="calc-header">
-    Calculator
-    <button class="close-btn" onclick="toggleCalculator()">X</button>
-  </div>
-
-  <div class="calc-screen" id="calcScreen">0</div>
-
-  <div class="calc-grid">
-    <button onclick="appendCalc('7')">7</button>
-    <button onclick="appendCalc('8')">8</button>
-    <button onclick="appendCalc('9')">9</button>
-    <button onclick="appendCalc('/')">÷</button>
-
-    <button onclick="appendCalc('4')">4</button>
-    <button onclick="appendCalc('5')">5</button>
-    <button onclick="appendCalc('6')">6</button>
-    <button onclick="appendCalc('*')">×</button>
-
-    <button onclick="appendCalc('1')">1</button>
-    <button onclick="appendCalc('2')">2</button>
-    <button onclick="appendCalc('3')">3</button>
-    <button onclick="appendCalc('-')">−</button>
-
-    <button onclick="appendCalc('0')">0</button>
-    <button onclick="appendCalc('.')">.</button>
-    <button onclick="appendCalc('+')">+</button>
-
-    <button onclick="clearCalc()">C</button>
-    <button onclick="calculateResult()">=</button>
-  </div>
-
-</div>
 
 <script src="script.js"></script>
 
 <script>
-// ================= INSTALL SYSTEM =================
-
+// INSTALL SYSTEM
 let deferredPrompt;
-
-const installBanner = document.getElementById("installBanner");
-const installBtn = document.getElementById("installBtn");
-const closeInstall = document.getElementById("closeInstall");
 
 window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
   deferredPrompt = e;
 
-  if(localStorage.getItem("hideInstallBanner") === "true"){
-    return;
-  }
-
   setTimeout(() => {
-    installBanner.style.top = "0";
+    document.getElementById("installBanner").style.top = "0";
   }, 2000);
 });
 
-installBtn.addEventListener("click", async () => {
-  if(!deferredPrompt) return;
-
+document.getElementById("installBtn").onclick = async () => {
+  if (!deferredPrompt) return;
   deferredPrompt.prompt();
   await deferredPrompt.userChoice;
+};
 
-  deferredPrompt = null;
-  installBanner.style.display = "none";
-});
-
-closeInstall.addEventListener("click", () => {
-  installBanner.style.display = "none";
-  localStorage.setItem("hideInstallBanner", "true");
-});
+document.getElementById("closeInstall").onclick = () => {
+  document.getElementById("installBanner").style.display = "none";
+};
 
 function installApp(){
   if(deferredPrompt){
@@ -211,29 +195,12 @@ function installApp(){
   }
 }
 
-// ================= SERVICE WORKER =================
-
+// SERVICE WORKER
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("servicework.js")
-      .then(() => console.log("Service Worker Registered"))
-      .catch(err => console.log("SW Error:", err));
+    navigator.serviceWorker.register("servicework.js");
   });
 }
-</script>
-
-<!-- ================= NEW AD SCRIPT ================= -->
-
-<script>
-  atOptions = {
-    'key' : 'ae36d7e9a9e25c450bfb682ae307cc68',
-    'format' : 'iframe',
-    'height' : 60,
-    'width' : 468,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/ae36d7e9a9e25c450bfb682ae307cc68/invoke.js">
 </script>
 
 </body>
