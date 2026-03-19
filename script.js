@@ -48,15 +48,17 @@ function openCBTSelection(){
 // ================= LOAD SUBJECT =================
 
 async function loadSubjectQuestions(subject){
-
-  const response = await fetch(`data/jamb/${subject}.json`);
-  const data = await response.json();
-
-  // Shuffle and pick 40
-  const shuffled = shuffle(data);
-  loadedQuestions[subject] = shuffled.slice(0,40);
+  try {
+    const response = await fetch(`data/jamb/${subject}.json`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP error! ${response.status}`);
+    const data = await response.json();
+    const shuffled = shuffle(data);
+    loadedQuestions[subject] = shuffled.slice(0,40);
+  } catch (err) {
+    console.error("Failed to load questions for", subject, err);
+    alert("Cannot load " + subject + " questions. Try refreshing.");
+  }
 }
-
 // ================= DIRECT SUBJECT MODE =================
 
 async function openSubject(subject){
@@ -313,4 +315,11 @@ if("serviceWorker" in navigator){
 
   });
 
+}
+if("serviceWorker" in navigator){
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch(err => console.log("Service Worker Failed", err));
+  });
 }

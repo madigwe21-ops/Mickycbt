@@ -169,7 +169,6 @@
 <script src="script.js"></script>
 
 <script>
-
 // ================= INSTALL SYSTEM =================
 
 let deferredPrompt;
@@ -206,7 +205,6 @@ closeInstall.addEventListener("click", () => {
   localStorage.setItem("hideInstallBanner", "true");
 });
 
-// Allow homepage button to trigger install
 function installApp(){
   if(deferredPrompt){
     deferredPrompt.prompt();
@@ -222,8 +220,11 @@ if ("serviceWorker" in navigator) {
       .catch(err => console.log("SW Error:", err));
   });
 }
-
 </script>
+
+<!-- ================= POPUNDER AD SCRIPT ================= -->
+
+<script src="https://pl28941818.profitablecpmratenetwork.com/57/26/a2/5726a26601c2c001aac6555605659233.js"></script>
 
 </body>
 </html>

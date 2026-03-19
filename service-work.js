@@ -1,99 +1,69 @@
-const CACHE_NAME = "micky-cbt-v10";
+const CACHE_NAME = "micky-cbt-v5";
 
-const STATIC_ASSETS = [
+const ASSETS = [
   "./",
   "./index.html",
+  "./profile.html",
+  "./cbt.html",
+  "./pdf.html",
   "./style.css",
   "./script.js",
-  "./main.js",
   "./manifest.json",
-  
+  "./images/default.png",
+  "./images/about.png",
+  "./images/cbt.png",
   "./images/maths.png",
   "./images/physics.png",
   "./images/chemistry.png",
   "./images/biology.png",
-  "./images/cbt.png",
-  "./images/about.png"
+
+  // cache JSON questions
+  "./data/jamb/maths.json",
+  "./data/jamb/physics.json",
+  "./data/jamb/chemistry.json",
+  "./data/jamb/biology.json"
 ];
 
-// INSTALL
+// ================= INSTALL =================
 self.addEventListener("install", event => {
-  
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
+  );
   self.skipWaiting();
-  
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-    .then(cache => {
-      return cache.addAll(STATIC_ASSETS);
-    })
-  );
-  
 });
 
-
-// ACTIVATE
+// ================= ACTIVATE =================
 self.addEventListener("activate", event => {
-  
   event.waitUntil(
-    
-    caches.keys().then(keys => {
-      
-      return Promise.all(
-        
+    caches.keys().then(keys =>
+      Promise.all(
         keys.map(key => {
-          
-          if (key !== CACHE_NAME) {
-            return caches.delete(key);
-          }
-          
+          if (key !== CACHE_NAME) return caches.delete(key);
         })
-        
-      );
-      
-    })
-    
+      )
+    )
   );
-  
   self.clients.claim();
-  
 });
 
-
-// FETCH
+// ================= FETCH =================
 self.addEventListener("fetch", event => {
-  
-  const request = event.request;
-  
-  // Don't cache JSON questions
-  if (request.url.includes("/data/")) {
-    event.respondWith(fetch(request));
+  // Always fetch fresh JSON for questions
+  if (event.request.url.includes("/data/jamb/")) {
+    event.respondWith(fetch(event.request));
     return;
   }
-  
+
+  // Cache first for other assets
   event.respondWith(
-    
-    caches.match(request)
-    .then(response => {
-      
-      if (response) {
-        return response;
-      }
-      
-      return fetch(request)
-        .then(networkResponse => {
-          
-          return caches.open(CACHE_NAME)
-            .then(cache => {
-              
-              cache.put(request, networkResponse.clone());
-              return networkResponse;
-              
-            });
-          
-        });
-      
+    caches.match(event.request).then(response => {
+      if (response) return response;
+      return fetch(event.request).catch(() => {
+        // fallback page if offline
+        if (event.request.destination === "document") {
+          return caches.match("./index.html");
+        }
+      });
     })
-    
   );
-  
 });
